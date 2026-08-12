@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin:"https://mahfuz-hridoy.github.io"
+  origin:"https://orbitmindai-frontend.vercel.app"
 }));
 app.use(express.json());
 app.use("/health",(req,res)=>{
