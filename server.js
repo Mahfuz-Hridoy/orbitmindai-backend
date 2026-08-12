@@ -16,6 +16,11 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use("/health",(req,res)=>{
+  res.status(200).json({
+    message: "healthy"
+  });
+});
 
 // API Routes
 app.use('/api/auth', require('./routes/authRoutes'));
